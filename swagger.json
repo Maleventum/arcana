@@ -1,0 +1,37 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "Our database management service, visualize in https://petstore.swagger.io/",
+    "title": "Arcana.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8081",
+  "basePath": "/",
+  "paths": {
+    "/status": {
+      "get": {
+        "description": "checks if the serivce is reachable",
+        "operationId": "status",
+        "responses": {
+          "200": {
+            "$ref": "#/responses/StatusOK"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "basic": {
+      "type": "basic"
+    }
+  }
+}

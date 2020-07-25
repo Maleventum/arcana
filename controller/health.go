@@ -1,3 +1,6 @@
+// Package controller is responsible for responding to the user input and perform interactions
+// on the data model objects. The controller receives the input, it validates the input and then
+// performs the business operation that modifies the state of the data model.
 package controller
 
 import "net/http"

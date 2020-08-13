@@ -23,8 +23,9 @@ func NewEvent(eventUsecase EventUsecase) *EventController {
 	return &EventController{eventUsecase: eventUsecase}
 }
 
-// swagger:route POST /v1/user/{used_id}/event event EventCreate
+// swagger:route POST /v1/user/{user_id}/event event EventCreate
 // Creates a new event.
+//
 // responses:
 //   500: Internal Server Error
 //   400: Bad Request

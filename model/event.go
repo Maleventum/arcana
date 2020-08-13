@@ -26,13 +26,20 @@ type Event struct {
 // swagger:response EventResponse
 type EventResponse struct {
 	// in:body
-	event Event
+	Event Event
 }
 
-// EventParams description object params
+// EventParams -
 //
 // swagger:parameters EventCreate
 type EventParams struct {
-	// in:body
-	event Event
+	// a EventParams describes an object to be created
+
+	// in: body
+	// required: true
+	Event Event
+
+	// in: path
+	// required: true
+	UserID int64
 }

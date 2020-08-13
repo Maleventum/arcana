@@ -23,7 +23,7 @@ func NewEvent(eventUsecase EventUsecase) *EventController {
 	return &EventController{eventUsecase: eventUsecase}
 }
 
-// swagger:route POST /v1/user/{user_id}/event event EventCreate
+// swagger:route POST /v1/user/{UserID}/event event EventCreate
 // Creates a new event.
 //
 // responses:

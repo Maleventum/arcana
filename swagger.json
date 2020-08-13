@@ -28,13 +28,30 @@
         }
       }
     },
-    "/v1/user/{user_id}/event": {
+    "/v1/user/{UserID}/event": {
       "post": {
         "tags": [
           "event"
         ],
         "summary": "Creates a new event.",
         "operationId": "EventCreate",
+        "parameters": [
+          {
+            "name": "Event",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EventObj"
+            }
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "name": "UserID",
+            "in": "path",
+            "required": true
+          }
+        ],
         "responses": {
           "201": {
             "$ref": "#/responses/EventResponse"

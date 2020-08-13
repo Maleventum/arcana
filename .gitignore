@@ -18,3 +18,4 @@ arcana
 .air.conf
 tmp
 .vscode
+*.db

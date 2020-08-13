@@ -1,3 +1,4 @@
+// Package router is responsible for setting up all the endpoints supported by the system.
 package router
 
 import (

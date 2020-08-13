@@ -1,3 +1,6 @@
+// Package Arcana is our database service for storing and retrieving events, it
+// uses the SQL driver that works for most databases, local tests are performed
+// on SQLite, during deployment I expect to use a cloud service.
 package main
 
 import (

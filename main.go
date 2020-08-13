@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	_ "github.com/Maleventum/arcana/docs" // needed for the documentation
+
 	"github.com/Maleventum/arcana/service/database"
 	"github.com/Maleventum/arcana/usecase"
 

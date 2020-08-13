@@ -23,12 +23,12 @@ func NewEvent(eventUsecase EventUsecase) *EventController {
 	return &EventController{eventUsecase: eventUsecase}
 }
 
-// swagger:route POST /v1/user/{used_id}/event event EventParam
+// swagger:route POST /v1/user/{used_id}/event event EventCreate
 // Creates a new event.
 // responses:
 //   500: Internal Server Error
 //   400: Bad Request
-//   201: Created
+//   201: EventResponse
 
 // Create Event create entry point
 // curl -v -X POST 127.0.0.1:8081/v1/user/PHONE/event -H "Content-Type: application/json" --data '{}'

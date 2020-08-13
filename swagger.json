@@ -27,6 +27,28 @@
           }
         }
       }
+    },
+    "/v1/user/{used_id}/event": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Creates a new event.",
+        "operationId": "EventParam",
+        "responses": {
+          "201": {
+            "$ref": "#/responses/Created"
+          },
+          "400": {
+            "description": "Request",
+            "$ref": "#/responses/Bad"
+          },
+          "500": {
+            "description": "Server Error",
+            "$ref": "#/responses/Internal"
+          }
+        }
+      }
     }
   },
   "securityDefinitions": {
